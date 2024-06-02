@@ -1,5 +1,6 @@
 import css from './styles.module.css';
-import LoginButton from './button/google.tsx';
+
+import LoginButton from './button/google/index';
 
 const LoginWall = () => {
     // unused variable to maintain func body
