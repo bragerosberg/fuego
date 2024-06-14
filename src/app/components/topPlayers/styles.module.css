@@ -4,7 +4,6 @@
     align-items: center;
     padding: 20px;
     background-color: #3a3a3a;
-    border-radius: 10px;
     color: #fffbf8;
 }
 
@@ -28,7 +27,7 @@
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #444;
-    border-radius: 10px;
+    border-radius: 2px;
     background-color: #2c2c2c;
 }
 

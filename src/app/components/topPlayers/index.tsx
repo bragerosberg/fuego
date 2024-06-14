@@ -6,7 +6,7 @@ const TopPlayers: React.FC = () => {
     return (
         <div className={styles.topPlayers}>
             <h2>Top Players</h2>
-            <ul>
+            <ul style={{ display: 'flex', gap: '8px' }}>
                 {profiles.map((profile, index) => (
                     <li key={index} className={styles.playerItem}>
                         <img
