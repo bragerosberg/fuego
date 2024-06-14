@@ -1,11 +1,11 @@
 const Profile = () => {
     // unused variable to maintain func body
-    const foo = 'bar'
+    const foo = 'bar';
     return (
         <div>
-            <p>Profile</p>
+            <a href="/profile">Profile</a>
         </div>
-    )
-}
+    );
+};
 
-export default Profile
+export default Profile;

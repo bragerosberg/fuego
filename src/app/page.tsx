@@ -6,6 +6,7 @@ import Title from '@/app/components/title';
 import LoginWall from '@/app/components/loginWall';
 import styles from './main.module.css';
 import { useSession } from 'next-auth/react';
+import TopPlayers from './components/topPlayers';
 
 export default function Home() {
     const { data: session } = useSession();
@@ -21,6 +22,7 @@ export default function Home() {
             ) : (
                 <LoginWall />
             )}
+            <TopPlayers />
             <Footer />
         </main>
     );
