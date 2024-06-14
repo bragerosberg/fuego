@@ -2,3 +2,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.twitchEmbed {
+    display: flex;
+    justify-content: center;
+}
