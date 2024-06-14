@@ -6,9 +6,19 @@ const TopPlayers: React.FC = () => {
     return (
         <div className={styles.topPlayers}>
             <h2>Top Players</h2>
-            <ul style={{ display: 'flex', gap: '8px' }}>
-                {profiles.map((profile, index) => (
-                    <li key={index} className={styles.playerItem}>
+            <div
+                style={{
+                    display: 'grid',
+                    gap: '8px',
+                    gridTemplateColumns: 'repeat(3,1fr)',
+                }}
+                className={styles.playerList}
+            >
+                {profiles.map((profile) => (
+                    <a
+                        href={`/profile/${profile.username}`}
+                        className={styles.playerItem}
+                    >
                         <img
                             src={profile.image}
                             alt={profile.username}
@@ -21,9 +31,9 @@ const TopPlayers: React.FC = () => {
                             <p>Faceit: {profile.rank.faceit}</p>
                             <p>Esportal: {profile.rank.esportal}</p>
                         </div>
-                    </li>
+                    </a>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
