@@ -6,14 +6,7 @@ const TopPlayers: React.FC = () => {
     return (
         <div className={styles.topPlayers}>
             <h2>Top Players</h2>
-            <div
-                style={{
-                    display: 'grid',
-                    gap: '8px',
-                    gridTemplateColumns: 'repeat(3,1fr)',
-                }}
-                className={styles.playerList}
-            >
+            <div className={styles.playerList}>
                 {profiles.map((profile) => (
                     <a
                         href={`/profile/${profile.username}`}
@@ -25,11 +18,18 @@ const TopPlayers: React.FC = () => {
                             className={styles.playerImage}
                         />
                         <div>
-                            <h3>{profile.username}</h3>
-                            <p>Country: {profile.country}</p>
-                            <p>Premiere: {profile.rank.premiere}</p>
-                            <p>Faceit: {profile.rank.faceit}</p>
-                            <p>Esportal: {profile.rank.esportal}</p>
+                            <h3 className={styles.username}>
+                                {profile.username}
+                            </h3>
+                            <p className={styles.rank}>
+                                Premiere: {profile.rank.premiere}
+                            </p>
+                            <p className={styles.rank}>
+                                Faceit: {profile.rank.faceit}
+                            </p>
+                            <p className={styles.rank}>
+                                Esportal: {profile.rank.esportal}
+                            </p>
                         </div>
                     </a>
                 ))}

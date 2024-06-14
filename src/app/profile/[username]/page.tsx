@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from '../../components/navbar';
 import styles from './styles.module.css';
 import { profiles } from './utils';
+import Title from '@/app/components/title';
 
 const Profile: React.FC = () => {
     const profileData = profiles.find((profile) =>
@@ -38,7 +39,7 @@ const Profile: React.FC = () => {
                     </a>
                 </div>
                 <div className={styles.profile}>
-                    <h1>Profil</h1>
+                    <Title text="Profile" size="medium" />
                     <div className={styles.profileItems}>
                         <div className={styles.profileItem}>
                             <div className={styles.profileLabel}>Username:</div>
