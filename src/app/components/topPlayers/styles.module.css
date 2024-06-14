@@ -5,6 +5,7 @@
     padding: 20px;
     background-color: #3a3a3a;
     color: #fffbf8;
+    margin: 50px ;
 }
 
 .topPlayers h2 {
@@ -15,16 +16,13 @@
 }
 
 .playersList {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: grid;
 }
 
 .playerItem {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #444;
     border-radius: 2px;
