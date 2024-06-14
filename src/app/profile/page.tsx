@@ -3,7 +3,8 @@ const Profile = () => {
     const foo = 'bar';
     return (
         <div>
-            <a href="/profile">Profile</a>
+            <h1>Profile</h1>
+            <p>Contents of page to be implemented</p>
         </div>
     );
 };
