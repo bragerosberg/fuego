@@ -2,7 +2,7 @@ import fuego from '../../../../public/fuego.png'
 import Image from 'next/image'
 import css from './styles.module.css'
 import Login from '@/app/components/login'
-import Profile from '@/app/components/profile'
+import Profile from '@/app/profile/page'
 
 const Navbar = () => {
     // unused variable to maintain func body
